@@ -28,7 +28,8 @@ const mockNotifications = [
     action: "follow",
     target: {
       type: "followed",
-      principal: "you",
+      principal: "",
+      adicionalContent: "followed you",
     },
     readed: false,
     date: "5m ago",
@@ -86,11 +87,11 @@ const mockNotifications = [
   },
 ];
 
-const NotificationsPannel = () => {
+const NotificationsPannel = ({ read }) => {
   return (
     <Grid container direction={"column"}>
       {mockNotifications.map((notification) => (
-        <Notification notification={notification} />
+        <Notification notification={notification} read={read} />
       ))}
     </Grid>
   );
