@@ -1,0 +1,77 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: $font-family-text;
+  font-size: $font-size-default;
+
+  @include phone {
+    color: red;
+  }
+}
+
+.layout-helper {
+  border: 1px red solid;
+}
+
+.typ-hover {
+  font-weight: 800 !important;
+  color: $darkgrayishblue !important;
+
+  &:hover {
+    color: $color-hover !important;
+    cursor: pointer !important;
+  }
+}
+
+.message-container {
+  margin-top: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid $lightgrayishblue2;
+  cursor: pointer;
+}
+
+.message-container:hover {
+  background-color: $lightgrayishblue1;
+}
+
+.message {
+  font-size: 1.4em;
+  color: $darkgrayishblue;
+}
+
+.date {
+  margin-top: 0.2rem;
+  font-size: 1.3em;
+  color: $grayish-blue;
+}
+.status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+  margin-left: 0.5rem !important;
+
+  word-break: break-all !important;
+}
+
+.card {
+  padding: 0.5rem 0.5rem !important ;
+  border-radius: 0.7rem !important;
+}
+
+.text-card {
+  margin: 0 0.5rem !important;
+  font-weight: 500 !important;
+  color: $darkgrayishblue !important;
+}
+.name {
+  font-weight: 800 !important;
+  cursor: pointer;
+  color: $verydarkblue !important;
+  &:hover {
+    color: $color-hover !important;
+    cursor: pointer !important;
+  }
+}
