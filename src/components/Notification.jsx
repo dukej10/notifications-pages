@@ -3,18 +3,17 @@ import { Avatar, Grid, Box, Typography } from "@mui/material";
 export const Notification = ({ notification, read }) => {
   let { name, action, target, readed, date, avatar } = notification;
   return (
-    <Box sx={{ mx: "auto", width: 650 }} className="card">
+    <Box
+      sx={{ marginBottom: 1.5, width: "100%" }}
+      className="card layout-helper"
+    >
       <Grid container className="layout-helper">
-        <Grid item xs={1} sm={1} className="layout-helper">
+        <Grid item xs={1} sm={2} md={1} className="">
           <Box display="flex" justifyContent="center" alignItems="center">
-            <Avatar
-              sx={{ width: 50, height: 50 }}
-              alt={name}
-              src={notification.avatar}
-            />
+            <Avatar sx={{ width: 50, height: 50 }} alt={name} src={avatar} />
           </Box>
         </Grid>
-        <Grid item xs={9} sm={11} className="layout-helper">
+        <Grid item xs={11} sm={10} md={11} className="">
           <Box
             justifyContent="start"
             alignItems="start"

@@ -9,7 +9,7 @@ function App() {
   let [read, setRead] = useState(false);
   return (
     <div className="App">
-      <Grid container>
+      <Grid container className="layout-helper container">
         <Navbar setRead={setRead} read={read} />
         <NotificationsPannel read={read} />
       </Grid>

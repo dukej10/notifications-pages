@@ -6,9 +6,9 @@ const Navbar = ({ read, setRead }) => {
       sx={{
         display: "flex",
         flexDirection: "row",
-        mx: "auto",
+        width: "100%",
         justifyContent: "space-between",
-        width: 650,
+        padding: 1,
       }}
       className="layout-helper header"
     >

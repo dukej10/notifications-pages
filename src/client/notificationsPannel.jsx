@@ -89,9 +89,14 @@ const mockNotifications = [
 
 const NotificationsPannel = ({ read }) => {
   return (
-    <Grid container direction={"column"}>
-      {mockNotifications.map((notification) => (
-        <Notification notification={notification} read={read} />
+    <Grid
+      container
+      direction={"column"}
+      className="layout-helper"
+      width={"100%"}
+    >
+      {mockNotifications.map((notification, index) => (
+        <Notification notification={notification} read={read} key={index} />
       ))}
     </Grid>
   );

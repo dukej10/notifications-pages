@@ -1,12 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
 .container {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 0 1.5rem;
-  padding-bottom: 2rem;
-  border-radius: 1rem;
-  background: $white;
 }
 
 .header {
@@ -28,22 +22,25 @@
 
 .value {
   padding: 0.2rem 0.8rem;
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
   font-weight: 800 !important;
+  font-family: $font-family-text !important;
+
   color: white !important;
 }
 
 .oe {
   font-weight: 800 !important;
-  font-size: 1.44em !important;
+  font-size: 1.46em !important;
   color: black;
-  font-family: "Plus Jakarta Sans" !important;
+  font-family: $font-family-text !important;
 }
 
 .mark-read {
   font-size: 1.1em !important;
   text-transform: none !important;
   color: $darkgrayishblue !important;
+  font-family: $font-family-text !important;
 
   &:hover {
     color: $color-hover !important;
