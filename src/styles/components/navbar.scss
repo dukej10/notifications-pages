@@ -1,8 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-.container {
-}
-
 .header {
   display: flex;
   padding: 2.5rem 0;
@@ -21,11 +18,10 @@
 }
 
 .value {
-  padding: 0.2rem 0.8rem;
+  padding: 0.2rem 0.8rem !important;
   font-size: 1.2em !important;
   font-weight: 800 !important;
   font-family: $font-family-text !important;
-
   color: white !important;
 }
 
