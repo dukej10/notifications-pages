@@ -72,7 +72,18 @@ const mockNotifications = [
     date: "1 week ago",
     avatar: kimberly,
   },
-
+  {
+    name: "Nathan Peterson",
+    action: "reacted",
+    target: {
+      type: "react",
+      principal: "5-end-game strategies to increase your win rate",
+      adicionalContent: "reacted to your recent post",
+    },
+    readed: true,
+    date: "2 weeks ago",
+    avatar: nathan,
+  },
   {
     name: "Anna Kim",
     action: "left",
