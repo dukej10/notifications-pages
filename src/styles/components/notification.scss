@@ -2,35 +2,30 @@
 
 body {
   font-family: $font-family-text !important;
-  // font-size: $font-size-default;
 
   @include phone {
-    color: red;
+    color: $primary-color-one;
   }
 }
 .container {
-  width: 610px !important;
+  width: 700px !important;
   @include phone {
     width: 370px;
-    background-color: blue;
   }
 }
 .layout-helper {
-  border: 1px red solid;
+  border: 1px $primary-color-one solid;
 }
 
 .typ-hover {
   font-weight: 800 !important;
   font-size: $font-size-default !important;
   font-family: $font-family-text !important;
-  margin-right: 0.35rem !important;
-  margin-left: 0.5rem !important;
-
+  margin-right: 1rem !important;
   color: $darkgrayishblue !important;
-  // margin-left: 0.5rem !important;
 
   &:hover {
-    color: $color-hover !important;
+    color: $primary-color-one !important;
     cursor: pointer !important;
   }
 }
@@ -62,11 +57,10 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: red;
+  background: $primary-color-one;
   vertical-align: middle;
   margin: 0;
   padding: 0;
-  // margin-left: 10px;
 }
 
 .status2 {
@@ -74,18 +68,18 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: blue;
+  background: $primary-color-one;
   vertical-align: middle;
-  margin: 0;
   padding: 0;
+  margin-left: 0.5rem;
 }
-
 .card {
-  border-radius: 0.7rem !important;
+  border-radius: 0.7rem solid !important;
+  border-color: $white !important;
+  background-color: $verylightgrayishblue !important;
 }
 
 .text-card {
-  // margin: 0 0.5rem !important;
   font-weight: 500 !important;
   font-size: $font-size-default !important;
   font-family: $font-family-text !important;
@@ -103,6 +97,13 @@ body {
   color: $verydarkblue !important;
   &:hover {
     color: $color-hover !important;
+    cursor: pointer !important;
+  }
+}
+
+.img {
+  &:hover {
+    color: $primary-color-one !important;
     cursor: pointer !important;
   }
 }

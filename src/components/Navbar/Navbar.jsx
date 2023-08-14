@@ -10,14 +10,14 @@ const Navbar = ({ read, setRead }) => {
         justifyContent: "space-between",
         padding: 1,
       }}
-      className="layout-helper header"
+      className="header"
     >
       <Box sx={{ display: "flex" }} className="notifications">
         <Typography
           variant="h3"
           align="start"
+          className="title-notify"
           sx={{ marginRight: 1 }}
-          className="oe"
         >
           Notifications
         </Typography>
