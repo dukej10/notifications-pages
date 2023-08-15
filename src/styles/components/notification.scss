@@ -7,10 +7,24 @@ body {
     color: $primary-color-one;
   }
 }
-.container {
-  width: 700px !important;
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: $white;
+
   @include phone {
-    width: 370px;
+    padding: 1.5rem;
+  }
+}
+
+.container {
+  width: 680px !important;
+  @include phone {
+    width: 100% !important;
   }
 }
 .layout-helper {
@@ -28,6 +42,10 @@ body {
     color: $primary-color-one !important;
     cursor: pointer !important;
   }
+
+  @include phone {
+    font-size: $font-size-sm !important;
+  }
 }
 
 .message-container {
@@ -43,14 +61,20 @@ body {
 }
 
 .message {
-  font-size: 1.4em;
-  color: $darkgrayishblue;
+  font-size: $font-size-default !important;
+  color: $darkgrayishblue !important;
+  @include phone {
+    font-size: $font-size-sm !important;
+  }
 }
 
 .date {
   margin-top: 0.2rem;
   font-size: 0.9em !important;
   color: $grayish-blue;
+  @include phone {
+    font-size: 0.8em !important;
+  }
 }
 .status {
   display: inline-block;
@@ -85,8 +109,10 @@ body {
   font-family: $font-family-text !important;
   margin-right: 0.5rem !important;
   margin-left: 0.5rem !important;
-
   color: $darkgrayishblue !important;
+  @include phone {
+    font-size: $font-size-sm !important;
+  }
 }
 .name {
   font-weight: 800 !important;
@@ -98,6 +124,9 @@ body {
   &:hover {
     color: $color-hover !important;
     cursor: pointer !important;
+  }
+  @include phone {
+    font-size: $font-size-sm !important;
   }
 }
 

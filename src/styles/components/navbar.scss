@@ -18,26 +18,36 @@
 
 .value {
   padding: 0.2rem 0.8rem !important;
-  font-size: 1.2em !important;
+  font-size: 1.2rem !important;
   font-weight: 800 !important;
   font-family: $font-family-text !important;
   color: white !important;
+  @include phone {
+    font-size: 0.8rem !important;
+  }
 }
 
 .title-notify {
   font-weight: 800 !important;
-  font-size: 1.46em !important;
+  font-size: 1.46rem !important;
   color: black;
   font-family: $font-family-text !important;
+  @include phone {
+    font-size: 1.1rem !important;
+  }
 }
 
 .mark-read {
-  font-size: 1.1em !important;
+  font-size: 1rem !important;
   text-transform: none !important;
   color: $darkgrayishblue !important;
   font-family: $font-family-text !important;
 
   &:hover {
     color: $color-hover !important;
+  }
+
+  @include phone {
+    font-size: 0.85rem !important;
   }
 }

@@ -5,16 +5,16 @@ export const Notification = ({ notification, read }) => {
   return (
     <Box sx={{ marginBottom: 1.5, width: "100%", py: 1 }} className="card ">
       <Grid container className="" sx={{ paddingRight: 2 }}>
-        <Grid item xs={2} sm={2} md={2} className="">
+        <Grid item xs={3} sm={2} md={2} className="">
           <Box display="flex" justifyContent="center" alignItems="center">
             <Avatar sx={{ width: 50, height: 50 }} alt={name} src={avatar} />
           </Box>
         </Grid>
-        <Grid item xs={10} sm={10} md={10} className="container-text">
+        <Grid item xs={9} sm={10} md={10} className="container-text">
           <Box justifyContent="start" alignItems="start">
             {action === "comment" ? (
               <Grid container className="">
-                <Grid item xs={10} sm={11} md={11} className="">
+                <Grid item xs={9} sm={11} md={11} className="">
                   <Grid container className="">
                     <Grid container className="">
                       <Box>
@@ -42,7 +42,7 @@ export const Notification = ({ notification, read }) => {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item xs={2} sm={1} md={1} className="">
+                <Grid item xs={3} sm={1} md={1} className="">
                   <Box display="flex" justifyContent="right">
                     <Box
                       component={"img"}
