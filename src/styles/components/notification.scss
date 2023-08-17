@@ -39,7 +39,7 @@ body {
   color: $darkgrayishblue !important;
 
   &:hover {
-    color: $primary-color-one !important;
+    color: $primary-color-two !important;
     cursor: pointer !important;
   }
 
@@ -100,7 +100,7 @@ body {
 .card {
   border-radius: 0.7rem solid !important;
   border-color: $white !important;
-  background-color: $verylightgrayishblue !important;
+  background-color: $light-blue !important;
 }
 
 .text-card {
@@ -122,7 +122,7 @@ body {
   cursor: pointer;
   color: $verydarkblue !important;
   &:hover {
-    color: $color-hover !important;
+    color: $primary-color-two !important;
     cursor: pointer !important;
   }
   @include phone {
